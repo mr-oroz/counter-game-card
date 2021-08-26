@@ -7,7 +7,7 @@ class Header extends Component {
         return (
             <div className='header'>
                 <h2>Карта игра 108</h2>
-                <p className='client'>Число игрока {number}</p>
+                <p className='client'>Число игроков {number}</p>
             </div>
         )
     }

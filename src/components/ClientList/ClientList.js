@@ -16,6 +16,7 @@ class ClientList extends Component {
     
     onAddPoint = (inputNumber, index) => {
         this.props.onAddNewPountClient(inputNumber, index)
+        this.setState({inputNumber: ''})
     }
 
     render() {
@@ -39,7 +40,7 @@ class ClientList extends Component {
                             return (
                                 <tbody key={index}>
                                     <tr>
-                                        <th scope="row">1</th>
+                                        <th scope="row">{index + 1}</th>
                                         <td>{elem.name}</td>
                                         <td>{elem.point}</td>
                                         <td className='point'>
