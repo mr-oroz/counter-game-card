@@ -9,19 +9,17 @@ class ClientList extends Component {
         }
     }
 
-    onChangeNumber = (input) => {
-        this.setState({ inputNumber: input })
-    }
+    // onChangeNumber = (input) => {
+    //     this.setState({ inputNumber: input })
+    // }
 
     
     onAddPoint = (inputNumber, index) => {
         this.props.onAddNewPountClient(inputNumber, index)
-        this.setState({inputNumber: ''})
     }
 
     render() {
-        const { client, onDeleteClient } = this.props;
-        const {inputNumber} = this.state;
+        const { client, onDeleteClient,  onChangeNumber } = this.props;
         return (
             <>
                 return (
@@ -45,12 +43,13 @@ class ClientList extends Component {
                                         <td>{elem.point}</td>
                                         <td className='point'>
                                             <input
-                                                onChange={(e) => this.onChangeNumber(e.target.value)}
+                                                value={elem.input}
+                                                onChange={(e) => onChangeNumber(e.target.value, index)}
                                                 placeholder='очко...'
                                                 className='input__point'
                                                 type="number" />
                                             <button
-                                                onClick = {() => this.onAddPoint(inputNumber, index)}
+                                                onClick = {() => this.onAddPoint(elem.input, index)}
                                                 className='btn__point'>
                                                 Добавить
                                             </button>

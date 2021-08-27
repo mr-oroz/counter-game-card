@@ -21,11 +21,24 @@ class App extends React.Component {
         }
     }
 
+    onChangeNumber = (input, idx) => {
+        this.setState(({ client }) => {
+            const item = client.findIndex((e, i) => i === idx);
+            const old = client[item];
+            const newItem = { ...old, input: old.input = input };
+            const newArr = [...client.slice(0, item), newItem, ...client.slice(item + 1)];
+            return {
+                client: newArr
+            }
+        })
+    }
+
     onAddNewClient = (body) => {
         if (body !== '') {
             const newItem = {
                 name: body,
                 point: 0,
+                input: ''
             }
             this.setState(({ client }) => {
                 const newArr = [...client, newItem];
@@ -42,7 +55,11 @@ class App extends React.Component {
         this.setState(({ client }) => {
             const item = client.findIndex((e, i) => i === index);
             const old = client[item];
-            const newItem = { ...old, point: (+old.point + +body) === 108 ? 0 : (+old.point + +body) }
+            const newItem = {
+                ...old,
+                point: (+old.point + +body) === 108 ? 0 : (+old.point + +body),
+                input: old.point = ''
+            }
             const newArr = [...client.slice(0, index), newItem, ...client.slice(index + 1)];
             return {
                 client: newArr
@@ -69,6 +86,7 @@ class App extends React.Component {
                 <Container>
                     <AddClient onAddNewClient={this.onAddNewClient} />
                     <ClientList
+                        onChangeNumber={this.onChangeNumber}
                         onAddNewPountClient={this.onAddNewPountClient}
                         onDeleteClient={this.onDeleteClient}
                         client={client} />
