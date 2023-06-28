@@ -1,23 +1,13 @@
 {
   "files": {
-    "main.css": "/mr-oroz.gihub.io/static/css/main.301e5561.chunk.css",
-    "main.js": "/mr-oroz.gihub.io/static/js/main.64fa57e2.chunk.js",
-    "main.js.map": "/mr-oroz.gihub.io/static/js/main.64fa57e2.chunk.js.map",
-    "runtime-main.js": "/mr-oroz.gihub.io/static/js/runtime-main.399d32a4.js",
-    "runtime-main.js.map": "/mr-oroz.gihub.io/static/js/runtime-main.399d32a4.js.map",
-    "static/css/2.c490997a.chunk.css": "/mr-oroz.gihub.io/static/css/2.c490997a.chunk.css",
-    "static/js/2.f354146e.chunk.js": "/mr-oroz.gihub.io/static/js/2.f354146e.chunk.js",
-    "static/js/2.f354146e.chunk.js.map": "/mr-oroz.gihub.io/static/js/2.f354146e.chunk.js.map",
+    "main.css": "/mr-oroz.gihub.io/static/css/main.8c961149.css",
+    "main.js": "/mr-oroz.gihub.io/static/js/main.86ea9837.js",
     "index.html": "/mr-oroz.gihub.io/index.html",
-    "static/css/2.c490997a.chunk.css.map": "/mr-oroz.gihub.io/static/css/2.c490997a.chunk.css.map",
-    "static/css/main.301e5561.chunk.css.map": "/mr-oroz.gihub.io/static/css/main.301e5561.chunk.css.map",
-    "static/js/2.f354146e.chunk.js.LICENSE.txt": "/mr-oroz.gihub.io/static/js/2.f354146e.chunk.js.LICENSE.txt"
+    "main.8c961149.css.map": "/mr-oroz.gihub.io/static/css/main.8c961149.css.map",
+    "main.86ea9837.js.map": "/mr-oroz.gihub.io/static/js/main.86ea9837.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.399d32a4.js",
-    "static/css/2.c490997a.chunk.css",
-    "static/js/2.f354146e.chunk.js",
-    "static/css/main.301e5561.chunk.css",
-    "static/js/main.64fa57e2.chunk.js"
+    "static/css/main.8c961149.css",
+    "static/js/main.86ea9837.js"
   ]
 }
