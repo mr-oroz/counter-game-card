@@ -61,6 +61,7 @@ class App extends React.Component {
                 input: old.point = ''
             }
             const newArr = [...client.slice(0, index), newItem, ...client.slice(index + 1)];
+            
             return {
                 client: newArr
             }
